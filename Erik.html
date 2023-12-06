@@ -7,14 +7,18 @@
         background-repeat: no-repeat;
         background-size: contain;
         position: relative;
-        animation: move 60s ease-in-out;
-        top: -33%;
+        animation: move 40s ease-out;
+        top: -700px;
         z-index: -1;
         
     }
     .click{
         margin-top: 5px;
         margin-bottom: 5px;
+    }
+
+    body{
+        overflow: hidden;
     }
 
     .Face {
@@ -37,8 +41,8 @@
     }
 
     @keyframes move{
-        from {top: 33%;}
-        to {top: -33%;}
+        from {top: 700px;}
+        to {top: -700px;}
     }
 </style>
 
