@@ -1,0 +1,62 @@
+<style>
+    .main-image{
+        background-image: url(Lord_Krister.png);
+        height: 100%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        animation: move 60s ease-in-out;
+        top: -33%;
+    }
+
+    @keyframes move{
+        from {top: 33%;}
+        to {top: -33%;}
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Erik Johansson</h1>
+    <p>Mitt namn är Erik och jag gillar sköldpaddor, spel och matlagning.</p>
+    <div style="margin-bottom: 10px;"><img src="Erik.jpg" height="525px" width="450px"/></div>
+
+    <p>Mina styrkor:</p>
+    <ul>
+        <li>Bra minne</li>
+        <li>Kvicktänkt</li>
+        <li>Konstnärlig</li>
+    </ul>
+    
+    <div>
+    <input type="button" value="Hallelujah" onclick="playMusic()" />
+    </div>
+    <div class="main-image" ></div>
+</body>
+<script>
+    var onOff = new Boolean;
+    function playMusic(){
+        if(onOff != true)
+        {
+            var music = new Audio('Audio/Ready.mp3');
+            music.play();
+            onOff = true
+        }
+        else
+        {
+            music.pause();
+            onOff = false;
+        }
+    }
+
+</script>
+</html>
