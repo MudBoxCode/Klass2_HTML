@@ -9,6 +9,31 @@
         position: relative;
         animation: move 60s ease-in-out;
         top: -33%;
+        z-index: -1;
+        
+    }
+    .click{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .Face {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        border-width: 2px;
+    }
+
+    .list{
+        max-width: 450px;
+        padding: 10px;
+        background-color: cadetblue;
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        border-width: 2px;
     }
 
     @keyframes move{
@@ -26,20 +51,23 @@
 
 </head>
 <body>
-    <h1>Erik Johansson</h1>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">Erik Johansson</h1>
     <p>Mitt namn är Erik och jag gillar sköldpaddor, spel och matlagning.</p>
-    <div style="margin-bottom: 10px;"><img src="Erik.jpg" height="525px" width="450px"/></div>
-
-    <p>Mina styrkor:</p>
+    <img class="Face" src="Erik.jpg" height="525px" width="450px"/>
+    <div class="list">
+    <h3 style="font-family: Arial, Helvetica, sans-serif;">Mina styrkor:</h3>
     <ul>
         <li>Bra minne</li>
         <li>Kvicktänkt</li>
         <li>Konstnärlig</li>
     </ul>
+    </div>
     
-    <div>
+    <div class="click">
     <input type="button" value="Hallelujah" onclick="playMusic()" />
     </div>
+    <div class="click"><a href="index.html"><button>Home</button></a></div>
+    
     <div class="main-image" ></div>
 </body>
 <script>
