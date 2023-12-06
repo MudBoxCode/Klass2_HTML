@@ -7,24 +7,49 @@
 </head>
 <style>
     body {
-        background-color: rgb(125, 158, 147) ; /* Behaglig bakgrundsfärg */
-        color: #333; /* Speciell textfärg */
-        font-family: Arial, sans-serif; /* Valfri typsnitt */
-        margin: 20px; /* Lite marginal för att undvika kantklippning */
+        background-color: rgb(125, 158, 147) ; 
+        color: #333; 
+        font-family: Arial, sans-serif; 
+        margin: 20px; 
     }
-
+    .text-container {
+            background-color: #789d79; 
+            padding: 15px; 
+            border: 6px solid #ccc;  
+            border-radius: 8px; 
+            display: inline-block; 
+            width: 470px; 
+            text-align: center;
+            font-size: 24px;
+    }
     img {
-        max-width: 500px; /* Maximal bildbredd */
-        height: auto; /* Behåll proportioner när du ändrar bredden */
-        border-radius: 10px; /* Avrundade hörn för en mjukare look */
+        max-width: 500px; 
+        height: auto; 
+        border-radius: 10px; 
+        border: 6px solid #ccc; 
     }
 
     li {
-        margin-bottom: 10px; /* Lägg till lite mellanrum mellan listelementen */
+        margin-bottom: 10px;
     }
+    .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #789d79; /* Färg för bakgrund */
+            color: #333;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 6px solid #ccc; 
+        }
 </style>
 <body>
-    <h1>Anna Holmström</h1>
+    <div class="text-container">
+        <h1>Anna Holmström</h1>
+    </div>
 
     <p>Mitt namn är Anna och jag är 31 år gammal och bor i Göteborg.</p>
     <p>Jag studerar för närvarande programmering på NBI och har tidigare jobbat som Contract Responsible på ett telematikföretag.</p>
@@ -37,6 +62,7 @@
         <li>Lyhörd</li>
         <li>Tålmodig</li>
     </ul>
-    Tillbaka till <a href="index.html">landningssidan</a>.
+    
+    <a href="index.html" class="button">Homepage</a>
 </body>
 </html>
